@@ -4,7 +4,7 @@
 
 **Institution:** ABES Engineering College  
 **Scan Date:** 2026-11-22  
-**Repository:** [https://github.com/thakurvarun094/CYBER_ANALYST_HCL_TECH.git]
+**Repository:** [https://github.com/thakurvarun094/CYBER_ANALYST_HCL_TECH-main]
 
 ---
 
